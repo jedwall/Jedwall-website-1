@@ -1,0 +1,486 @@
+
+    nav {
+        width: 180px;
+        height: 100%;
+        background-color: powderblue;
+        align: left;
+        position: fixed;
+        /* Make it stick, even on scroll */
+        top: 0;
+        left: 0;
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row>.column {
+        padding: 0px 0px;
+    }
+    .row2>.column2 {
+        padding: 0px 0px;
+    }
+    .row3>.column3 {
+        padding: 0px 0px;
+    }
+    .row4>.column4 {
+        padding: 0px 0px;
+    }
+    .row5>.column5 {
+        padding: 0px 0px;
+    }
+    .row6>.column6 {
+        padding: 0px 0px;
+    }
+    .row7>.column7 {
+        padding: 0px 0px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .row2:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .row3:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .row4:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .row5:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .row6:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .row7:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .column {
+        float: left;
+        width: 25%;
+    }
+    .column2 {
+        float: left;
+        width: 25%;
+    }
+    .column3 {
+        float: left;
+        width: 25%;
+    }
+    .column4 {
+        float: left;
+        width: 25%;
+    }
+    .column5 {
+        float: left;
+        width: 25%;
+    }
+    .column6 {
+        float: left;
+        width: 25%;
+    }
+    .column7 {
+        float: left;
+        width: 25%;
+    }
+    /* The Modal (background) */
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+    }
+
+    /* Modal Content */
+
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    /* The Close Button */
+
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .cursor {
+        cursor: pointer
+    }
+
+    /* Next & previous buttons */
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    img {
+        margin-bottom: -4px;
+    }
+
+    .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+    img.hover-shadow {
+        transition: 0.3s
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+    p1 {
+        font-family: "Arial", Sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    p2 {
+        font-size: 30px;
+        font-color: #000000;
+    }
+
+    p3 {
+        font-size: 10vw;
+        color: white;
+        font-family: "Arial", Sans-serif;
+        margin-left: 190px;
+    }
+
+    p4 {
+        font-size: 10vw;
+        font-family: "Arial", Sans-serif;
+        margin-left: 190px;
+    }
+    p5 {
+        font-size: 30px;
+        font-family: "Arial", Sans-serif;
+        margin-left: 190px;
+        text-align: center;
+        width:"100%";
+    }
+    p6 {
+        font-size: 30px;
+        font-family: "Arial", Sans-serif;
+        text-align: center;
+    }
+    .headline {
+        background-color: red;
+        display: block;
+        padding:10px 0px 15px 10px;
+    }
+
+    p.white {
+        color: white;
+        font-family: "Arial", Sans-serif; 
+    }
+    p.whiteR {
+        color: white;
+        font-family: "Arial", Sans-serif;
+        margin-left: 190px; 
+    }
+    p.black {
+        font-family: "Arial", Sans-serif;
+        margin-left: 190px;
+    }
+
+    p.white-right {
+        color: white;
+        font-family: "Arial", Sans-serif;
+        font-size: 30px;
+    }
+
+    p.black-right {
+        color: black;
+        font-family: "Arial", Sans-serif;
+        font-size: 30px;
+    }
+
+    li {
+        list-style-type: none;
+        font-family: "Arial", Sans-serif;
+        margin-left: 0;
+    }
+
+    a {
+        display: block;
+        width: 19%px;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111111;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    #wrapA {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #wrapB {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #wrapC {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #wrapD {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #wrapE {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #wrapF {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #wrapG {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #wrapH {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #wrapI {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .gdBg {
+        width: 0px;
+        height: 270px;
+        background: black;
+        right: 0px;
+    }
+
+    .smBg {
+        width: 0px;
+        height: 270px;
+        background: white;
+        right: 0px;
+    }
+
+    .wdBg {
+        width: 0px;
+        height: 260px;
+        background: black;
+        right: 0px;
+    }
+
+    .phBg {
+        width: 0px;
+        height: 150px;
+        background: white;
+        right: 0px;
+    }
+
+    .vaBg {
+        width: 0px;
+        height: 260px;
+        background: black;
+        right: 0px;
+    }
+
+    .aiBg {
+        width: 0px;
+        height: 260px;
+        background: white;
+        right: 0px;
+    }
+
+    .amBg {
+        width: 0px;
+        height: 140px;
+        background: black;
+        right: 0px;
+    }
+
+    .coBg {
+        width: 0px;
+        height: 150px;
+        background: white;
+        right: 0px;
+    }
+
+    .lsBg {
+        width: 0px;
+        height: 140px;
+        background: black;
+        right: 0px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .img1 {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .img2 {
+        padding: 0px 10px 0px 0px;
+        float: right;
+    }
+
+    #pictures1 {
+        padding: 10px;
+        margin-left: 190px;
+    }
+
+    #innerdiv {
+        margin-left: 180px;
+    }
+    #JD       {
+        padding: 0px 10px 0px 0px;
+        background-color: powderblue;
+        margin-left: 190px;
+        height:60px;
+    }
+    #aboutme  {
+        margin-left: 180px;
+        color: red;
+        padding: 0px 10px 0px 10px;
+        position: absolute; 
+        left: 0px; 
+        top: 0px; 
+        background-image: url("r3darkman.jpg");
+        z-index: -1;    
+    }
+    table, th, td {
+        border: 1px solid red;
+        color: white;
+        border-collapse: collapse;
+        margin-left: 190px;
+}
+    th, td {
+        padding: 5px;
+        text-align: left;
+}
+    th {
+        padding: 15px;
+    }
