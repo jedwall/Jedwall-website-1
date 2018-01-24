@@ -1,6 +1,6 @@
 
     nav {
-        width: 180px;
+        width: 18%;
         height: 100%;
         background-color: powderblue;
         align: left;
@@ -297,6 +297,7 @@
         list-style-type: none;
         font-family: "Arial", Sans-serif;
         margin-left: 0;
+        font-size: 2vw;
     }
 
     a {
@@ -346,12 +347,6 @@
     }
 
     #wrapF {
-        width: 100%;
-        height: 100%;
-        margin: 0px 0px 0px 0px;
-    }
-
-    #wrapG {
         width: 100%;
         height: 100%;
         margin: 0px 0px 0px 0px;
@@ -411,24 +406,17 @@
         right: 0px;
     }
 
-    .amBg {
+    .coBg {
         width: 0px;
         height: 140px;
         background: black;
-        right: 0px;
-    }
-
-    .coBg {
-        width: 0px;
-        height: 150px;
-        background: white;
         right: 0px;
     }
 
     .lsBg {
         width: 0px;
         height: 140px;
-        background: black;
+        background: white;
         right: 0px;
     }
 
@@ -473,7 +461,6 @@
     }
     table, th, td {
         border: 1px solid red;
-        color: white;
         border-collapse: collapse;
         margin-left: 190px;
 }
@@ -483,4 +470,10 @@
 }
     th {
         padding: 15px;
+    }
+    table#t01 {
+        color: black;
+    }
+    table#t02 {
+        color: white;
     }
